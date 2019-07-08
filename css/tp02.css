@@ -1,0 +1,243 @@
+/* THEORETICAL PHYSICS PAGE     */
+div.assignments { 
+    width: 32%;
+    min-width: 345px; 
+    display: inline-block;
+    margin: 5px;
+    float: left;
+    margin-bottom: 20px;
+
+
+    /* colour change delay*/
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+     transition:.3s;
+}
+
+a {
+    color: green;
+}
+
+div.assignments > div {
+    background-color: #ddd;
+    margin-bottom: 2px;
+    text-align: center;
+}
+div.assignments > div > div {
+    padding: 5%; 
+    text-align: center;
+    font-size: 72%;
+    color: green;
+}
+
+div.assignments > a > div {
+    background-color: #ddd;
+    margin-bottom: 2px;
+    text-align: center;
+    padding: 10px;
+}
+div.assignments > a > div:hover {
+    background-color: #dde9e6;
+}
+
+
+div.dropdownTable {
+    background-color: #fff;
+}
+
+div.dropdownTable > a {
+    background-color: #fff;
+    margin-bottom: 4px;
+}
+
+div.dropdownTable > a > div {
+    font-size: 140%;
+    background-color: #ddd;
+    margin-bottom: 4px;
+    padding: 3%;
+    text-align: center;
+    color: green;
+}
+
+div.dropdownTable > a > div:hover {
+    background-color: #dde9e6;
+}
+div.dropdownTable > a > div > div {
+    font-size: 60%;
+    padding: none;
+}
+
+
+
+
+
+div.assignments > div.module { 
+    font-size: 200%;
+    margin-bottom: 0px;
+}
+
+div.assignments > a > div.module { 
+    font-size: 250%;
+    margin-bottom: 0px;
+    color: #000;
+}
+
+div.assignments > a.modulelink:hover {  
+    background-color: #dde9e6;
+}
+
+a.modulelink {
+    background-color: #ddd;
+    color:green; 
+    font-size: 20px
+}
+
+
+/* Collapse button */
+.dropButton {
+    background-color: #D2D2D2;
+    color: #373;
+    padding: 16px;
+    font-size: 160%;
+    border: none;
+    width: 100%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: montserrat;
+    margin-top: 2px; 
+}
+
+.dropButton:hover {
+    background-color: #CCDFC0;
+    color: #4A4;
+}
+
+
+
+
+@media screen and (max-device-width: 600px){
+
+    div.assignments > div.module { 
+    font-size: 370%;
+    margin-bottom: 0px;
+    }
+
+    div.assignments > a > div.module { 
+    font-size: 400%;
+    margin-bottom: 0px;
+    color: #000;
+    }
+
+    div.assignments {
+        width: 90%;
+        float: center;
+        margin-left: 5%;
+    }
+
+    div.assignments a > div {
+        font-size: 200%;}
+
+
+    div.assignments > div > div {
+        font-size: 120%;}
+
+    div.dropdownTable > a > div {
+        font-size: 250%;
+    }
+
+    div.dropdownTable > a > div > div {
+        border: 1%;
+    }
+
+    .dropButton {
+        font-size: 300%;
+    }
+}
+
+.hwTable {
+        display: none;
+    }
+
+
+/* THEORETICAL PHYSICS PAGE     */
+/* THEORETICAL PHYSICS PAGE     */
+div.blueBox {
+    margin:auto; 
+    background-color: #cde; 
+    width: 60%;
+    min-width: 345px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div.blueBox > strong {
+    font-size: 200%; 
+    color: navy;
+}
+
+div.blueBox > a{
+    color: #77f;
+    font-size: 200%;
+    width: 100%; 
+    text-align: center;
+    margin: auto;
+    display: block;
+    border-style: solid;
+    border-width: 1px 0px;
+    border-color: #eee;
+
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+  transition:.3s;
+}
+
+div.blueBox > a:hover {
+    background-color: #c3d3ee;
+    color: #44d; 
+}
+
+
+.dropButtonBlue {
+    background-color: #cde;
+    color: #55d;
+    padding: 16px;
+    font-size: 160%;
+    text-align: center;
+    margin: auto;
+
+    border-style: solid;
+    border-width: 1px 0px;
+    border-color: #cde; 
+
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:.3s;
+
+    cursor: pointer;
+    font-family: montserrat;
+    margin-top: 2px; 
+}
+
+.dropButtonBlue:hover {
+    background-color: #b3c3e3;
+    color: #44d; 
+}
+
+
+
+@media screen and (max-device-width: 600px){
+    div.blueBox {
+        width: 90%;
+    }
+}

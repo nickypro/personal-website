@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> TCD Theoretical Physics </title>
+<link href="css/style.css" 	rel="stylesheet">
+<link href="css/menu.css" 	rel="stylesheet">
+<link href="css/tp.css" 	rel="stylesheet">
+<link href="css/text.css" 	rel="stylesheet">
+<script src="js/tp05.js" 	type="text/javascript"> </script>
+<script src="js/menu1.js" 	type="text/javascript"> </script>
+<script src="js/tpjfData01.js" 	type="text/javascript"> </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script> 
+	styl(); 
+</script>
+
+</head>
+<body>
+
+<!-- top part of page ================================-->
+<div id="bar">
+<ul id='menu' width="100%">
+   <li> <a href="index.html" class="menuLink">   Home      </a></li>
+   <li> <a href="stuff.html" class="menuLink">   Blog      </a></li>
+   <li class="dropdown">  <a class="menuLink">   Trinity   </a>
+      <div class="dropdownContent" style="--boxhig: 7em;">
+        <a href="tpjf.html" class="menuLink menuLinkDropdown">1st Year TP</a>
+        <a href="tpsf.html" class="menuLink menuLinkDropdown">2nd Year TP</a>
+        <!--<a href="tpjs.html">Link 3</a>-->
+      </div>
+    </li>
+   <li> <a href="posters.html" class="menuLink"> Posters   </a></li>
+    <li class="dropdown">  <a class="menuLink">   Coding   </a>
+      <div class="dropdownContent" style="--boxhig: 4em;">
+        <a href="researchProject2019.html" class="menuLink menuLinkDropdown">Tensor of Inertia</a>
+      </div>
+    </li>
+</ul>
+</div>
+<!-- main body of the page ===========================-->
+<div id="main">
+<br class="topEmpty">
+<img class="full" src="pic/2018-TPbg-01.jpg">
+
+
+
+<div class="full"> <br> 
+	<p class="top-full"> This page is dedicated to having all of our assignments up in one place
+</p>
+<!------------------------  Date  -------------------------->
+<div>
+<div class="blueBox">
+<p>
+Today's Date: <br>
+
+<strong style="font-size: 300%; color: var(--blueBoxTitleColor);">
+<script>
+var options = { weekday:'short', 
+				year: 	'numeric', 
+				month: 	'short', 
+				day: 	'numeric'};
+var today  = new Date();
+
+document.writeln( today.toLocaleDateString("en-GB", options) );
+</script>
+</strong>
+</p>
+</div>
+</div>
+<!------------------------- /Date -------------------------->
+<!------------------------- /Things -------------------------->
+	<div class="blueBox"><a href="https://www.masteringphysics.com/site/login.html"> Mastering Physics </a></div>
+	<div class="blueBox"><a href="https://www.tcd.ie/academicregistry/exams/past-papers/annual/"> TCD Exam Archive </a></div>
+	<div class="blueBox"><a href="https://mymodule.tcd.ie/"> TCD Blackboard </a></div>
+
+<div class="blueBox">
+<button type="button" class="dropButtonBlue" onclick="collapseItem('blueLinks')"> <b> &#9660; MORE LINKS </b> </button>
+</div>
+
+<div id="blueLinks" style="display: none;">
+	<div class="blueBox"><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/index.html"> Hyper Physics </a></div>
+	<div class="blueBox"><a href="http://www.tcd.ie/Local/Exam_Papers/"> Old Exam Archive </a></div>
+	<div class="blueBox"><a href="https://www.tcd.ie/itservices/software/kb/student_software.php"> TCD Software </a></div>
+	<div class="blueBox"><a href="https://stella.catalogue.tcd.ie/iii/encore/myaccount?lang=eng"> TCD Library </a></div>
+	<div class="blueBox"><a href=" http://134.226.101.24/WebApp/Login"> TCD Print Upload</a></div> 
+	<div class="blueBox"><a href="http://www.tcdprint.ie/"> TCD Print </a></div>
+</div>
+<!------------------------- /Things -------------------------->
+<br>
+</div>
+<!-------------------------- MATHS SEMESTER 2 ---------------->
+<div class="full">
+<h1 style="font-size: 420%"> Semester 2 </h1>
+<br>
+<!-----------------  COLM    ----------------------->
+<div class="assignments">
+	<a href="https://www.maths.tcd.ie/~odunlain/1266/index.html"> 
+		<div class="assignmentLink moduleLink"><br> MA1266 - Colm 
+		<div class="assignmentLinkSmall"> maths.tcd.ie/~odunlain  </div> </div>
+	</a> 
+	<script> 
+		multiBox("TP/Colm/MA1266-NickyNotes", '', '', '.pdf', 'MY NOTES', 'C Programming')
+		//homeworkTop("TP/Colm/MA1266-",  MA1266Homeworks, MA1266HwDates)
+	 	getTop("TP/Colm/MA1266-", "Assignment", MA1266Assignments, MA1266AssDates)
+		document.writeln('<a href="TP/Colm/runhex.c"> <div class="assignmentLink assignmentLinkSmall"> runhex.c </div> </a>'); 
+		//listLectures("TP/Jan/MA1266-", MA1266Lectures);
+		list("Online Notes", "TP/Colm/MA1266-", "Lecture", MA1266Lectures, MA1266LectureTitles, '', '', 0, '','')
+		//listTutorials("TP/Colm/MA1266-", MA1266Tutorials, MA1266TutSolutions);
+		list("C Assignments","TP/Colm/MA1266-", "Assignment", MA1266Assignments, [], MA1266AssDates, '', 0, '','')
+		list("Past Qs","TP/Colm/MA1266-", "pastquestions", 4, 
+			[ '2015 Quiz Qs & As', '2018 Exam', '2017 Exam + As (MA1264)', '2015 Exams + As (MA1264)'], '', '', 0, '','')
+
+		//listHomeworks("TP/Colm/MA1266-", MA1266Homeworks, MA1266HwDates, MA1266HwSolutions);
+	</script>
+</div>
+<!-----------------  COLM  ------------------------->
+<!-----------------  KIRK  ------------------------->
+<div class="assignments">
+	<a href="https://mymodule.tcd.ie"> 
+		<div class="assignmentLink moduleLink"><br> MA1132 - Kirk 
+		<div class="assignmentLinkSmall"> tcd.blackboard.com  </div></div> 
+	</a> 
+	<a href="TP/Kirk/MA1132-Syllabus.pdf"> 
+		<div class="assignmentLink assignmentLinkSmall"> Advanced Calculus Syllabus </div> </a> 
+	<script> 
+		multiBox("TP/Nicky/NickyAdvancedCalculusNotes", '', '', '.pdf', 'MY NOTES', 'Advanced Calculus')
+
+		//homeworkTop("TP/Kirk/MA1132-",  MA1132Homeworks, MA1132HwDates)
+		multiBox("https://www.studocu.com/en-ie/course/trinity-college-dublin-university-of-dublin/advanced-calculus/2068512?fbclid=IwAR0RseY7a7IePSV_W0Zp78P7yGi5ZmfsbIYVCfy0NSVB7gGE8cjjX2NVYf8", 
+			'', '', '', 'Past Year Materials', 'Frolov MA1132')
+	 	//getTop("TP/Kirk/MA1132-", "Homework", MA1132Homeworks, MA1132HwDates)
+	 	//getTop("TP/Kirk/MA1132-", "Tutorial", MA1132Tutorials, MA1132TutorialDates)
+		list("Lecture Notes", "TP/Kirk/MA1132-", "Notes", MA1132Lectures, MA1132LectureTitles, '','', "", 0, '','') 
+		//listTutorials("TP/Kirk/MA1132-", MA1132Tutorials, MA1132TutSolutions);
+		//listHomeworks("TP/Kirk/MA1132-", MA1132Homeworks, MA1132HwDates, MA1132HwSolutions);
+		list("Tutorials", "TP/Kirk/MA1132-", "Tutorial", MA1132Tutorials, [], MA1132TutorialDates, "TutorialSolutions", MA1132TutSolutions, [],'')
+		list("Homeworks", "TP/Kirk/MA1132-", "Homework", MA1132Homeworks, [], MA1132HwDates, "HomeworkSolutions", MA1132HwSolutions, [],'')
+
+	</script>
+</div>
+<!----------------- /KIRK  ------------------------->
+<!--------------- VLAD_----------------->
+<div class="assignments">
+	<a href="https://www.maths.tcd.ie/~vdots/teaching/MA1112-1819.html"> 
+		<div class="assignmentLink moduleLink"><br> MA1112 - Vlad 
+		<div class="assignmentLinkSmall"> maths.tcd.ie/~vdots/teaching </div></div> 
+	</a>
+    <a href="http://joshua.smcvt.edu/linearalgebra/book.pdf"> 
+		<div class="assignmentLink assignmentLinkSmall"> J Hefferon Linear Algebra </div> </a> 	
+	<script>
+		//multiBox("TP/Vlad/MA1112-", 'PastMidterms', '', '.pdf', 'Midterm Exams', 'From past years')
+
+		multiBox("TP/Nicky/NickyLinearAlgebraIINotes1", '', '', '.pdf', 'MY NOTES', 'Part 1')
+
+		multiBox("TP/Nicky/NickyLinearAlgebraIINotes2", '', '', '.pdf', 'MY NOTES', 'Part 2')
+
+		//multiBox("TP/Vlad/MA1112-", 'ExamQuestions', 3, '.pdf', 'Exam Qs', 'From past years')
+
+		//homeworkTop("TP/Vlad/MA1112-",  MA1112Homeworks, MA1112HwDates)
+
+		listLectures( 	"https://www.maths.tcd.ie/~vdots/teaching/files/MA1112-1819/1112L", 
+						MA1112Lectures, 'handout.pdf', "ma1112lec", MA1112LectureTitles);  
+
+		listTutorials("https://www.maths.tcd.ie/~vdots/teaching/files/MA1112-1819/1112",  MA1112Tutorials, MA1112TutSolutions, 'T', 'TS');
+
+		listHomeworks("TP/Vlad/MA1112-",  MA1112Homeworks,  MA1112HwDates, MA1112HwSolutions);
+
+		list("Past Qs","TP/Vlad/MA1112-", "ExamQuestions", MA1112ExamQs, 
+			[ 'Midterm Exam', 'Select Past Midterms', 'Select Past Exam Qs'], '', 'ExamSolutions', MA1112ExamSolutions, [],'')
+	</script>
+</div>	
+<!-----------------  /VLAD ------------------------->
+<!-----------------  JAN   ------------------------->
+<div class="assignments">
+	<a href="https://mymodule.tcd.ie"> 
+		<div class="assignmentLink moduleLink"><br> MA1242 - Jan
+		<div class="assignmentLinkSmall"> tcd.blackboard.com </div></div> 
+	</a> 
+	<script> 
+		multiBox("TP/Nicky/NickyMechanics11Notes", '', '', '.pdf', 'MY NOTES', 'Mechanics 11')
+		homeworkTop("TP/Jan/MA1242-",  MA1242Homeworks, MA1242HwDates)
+		list("Tutorials", "TP/Jan/MA1242-", "Tutorial", MA1242Tutorials, [],[],"TutorialSolutions",MA1242TutSolutions, [],'')
+
+		//listLectures( "TP/Jan/MA1242-" , 4);
+		//listTutorials("TP/Jan/MA1242-", MA1242Tutorials, MA1242TutSolutions);
+		listHomeworks("TP/Jan/MA1242-", MA1242Homeworks, MA1242HwDates, MA1242HwSolutions);
+	</script>
+</div>
+<!----------------- / JAN  ------------------------->
+<!----------------------  Electromagnetism -------------------->
+<div class="assignments">
+	<a href="https://tcd.blackboard.com/"> 
+		<div class="assignmentLink moduleLink"><br> EM - Jose 
+		<div class="assignmentLinkSmall"> tcd.blackboard.com </div></div> 
+	</a> 
+	
+	<script type="text/javascript">
+	multiBox("TP/Nicky/NickyEMNotes", '', '', '.pdf', 'MY NOTES', 'E&M')
+	</script>
+
+
+	<a href="https://www.masteringphysics.com/site/login.html"> 
+		<div class="assignmentLink"> Mastering Physics
+		<div class="assignmentLinkSmall"> ( Tue 9th Apr )	
+	</div> </div> </a>
+
+	<a href="TP/Jose/PY1T20-Electromagnetism-Slides.pdf"> 
+ 		<div class="assignmentLink"> Lecture Notes 
+ 		<div class="assignmentLinkSmall"> (powerpoint slides pdf) 
+ 	</div> </div> </a>
+
+<script> 
+
+	list("Syllabus", 'TP/Jose/PY1T20-Electromagnetism-Slides.pdf#page=', '', PY1T20ElectroSyllabusNumber, PY1T20ElectroSyllabusTitles, PY1T20ElectroSyllabusSubtitles, '', 0, '', 
+		[6,17,34,51,61,67,   90,   109,116,    136,150,163,182,196,210        ,232    ,248,    258,263]);
+	//	[6,17,34,51,61,67,78,90,98,109,116,121,136,150,163,182,196,210,215,220,232,243,248,253,258,263]);
+
+
+	//multiBox("TP/Jose/PY1T20-Electromagnetism-", 'Slides', '', '.pdf', 'Slides', 'Lecture Notes')
+
+	//listLectures( "TP/Jose/PY1T20-Electromagnetism-lecture-" , noOfLecPY1T10Stats, '.pdf');
+	
+	//listTutorials("TP/Jose/PY1T20-Electromagnetism-",  noOfTutPY1T10Stats, noOfTslPY1T10Stats);
+</script>
+</div>
+<!---------------------- /Electomagnetism -------------------->
+<!----------------------  Astro -------------------->
+<div class="assignments">
+	<a href="https://mymodule.tcd.ie"> 
+		<div class="assignmentLink moduleLink"><br> Astro - Aline
+		<div class="assignmentLinkSmall"> tcd.blackboard.com </div></div> 
+	</a> 
+	<script type="text/javascript">
+			multiBox("TP/Nicky/NickyAstroNotes", '', '', '.pdf', 'MY NOTES', 'Astro Physics')
+	</script>
+
+	<a href="https://www.masteringphysics.com/site/login.html"> 
+	<div class="assignmentLink"> Mastering Physics
+	<div class="assignmentLinkSmall"> ( Fri 14th Mar ) </div></div> </a>
+
+<script> 
+	//multiBox("TP/NickyWavesNotes", '', '', '.pdf', 'MY NOTES', 'Waves')
+
+	//multiBox("TP/Louise/PY1T20-", 'tp', 1, '.pdf', 'Tutorial Qs', 'From past exams')
+
+	//listTutorials("TP/Aline/PY1T20Astro-",  PY1T20AstroTutorials, PY1T20AstroTutSolutions);
+
+	list("Lecture Slides", "TP/Aline/PY1T20Astro-", "Lecture", PY1T20AstroLectures, PY1T20AstroLectureTitles,'',"ConceptsTest", PY1T20AstroLectureConcepts ,[],'')
+	list("Textbook Sol.", "TP/BookMaterial/", 
+		 "UniversityPhysics-Solutions", 44, UniversityPhysicsTitles,'',"", 0 ,[],'')
+
+
+</script>
+</div>
+<!---------------------- /Astro -------------------->s
+<!----------------------  Quantum -------------------->
+<div class="assignments">
+	<a class="modulelink" href="https://tcd.blackboard.com/"> 
+		<div class="assignmentLink moduleLink"><br> QM - Eastham 
+		<div class="assignmentLinkSmall"> tcd.blackboard.com </div></div>
+	</a> 
+	<script type="text/javascript">
+	multiBox("https://photos.app.goo.gl/iUqvQhGeB9pas4Lw8", '', '', '', 'MY NOTES', 'Google Photos')
+	</script>
+
+	<a href="https://www.masteringphysics.com/site/login.html"> 
+	<div class="assignmentLink"> Mastering Physics
+	<div class="assignmentLinkSmall"> ( Mon 8th Apr )	</div> </div> </a>
+
+<!---    <a class="modulelink" href="http://elib.tcd.ie/login?url=http://lib.myilibrary.com/Open.aspx?id=1972"> 
+		<div> <div> A.P. French Special Rel </div> </div> </a>  --->
+	<script> 
+		//getTop("TP/Kirk/MA1132-", "Homework", MA1132Homeworks, MA1132HwDates)
+
+
+		multiBox("TP/Eastham/PY1T20QM-Syllabus", '', '', '.pdf', 'Syllabus', 'Quantum Mechanics')
+
+		//listTutorials("TP/Nuala/PY1T10-Rel-", noOfTutPY1T10Rel, noOfTslPY1T10Rel)
+
+		list("Lecture Slides", "TP/Eastham/PY1T20QM-", "LectureNotes", PY1T20QuantumLectures, PT1T20QuantumLectureTitles,'',"",0 ,[],'');
+	</script>
+
+	 
+
+</div>
+<!---------------------- /Quantum -------------------->
+</div>
+<!-- Physics -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br> <img class="full" src="pic/2018-TPbg-03.jpg">
+<!--MATHS-->
+<div class="full">
+<h1 style="font-size: 420%"> Semester 1 </h1>
+<br>
+
+<!----------------------  Jan  -------------------->
+<div class="assignments">
+	<a href="https://mymodule.tcd.ie"> 
+		<div class="assignmentLink moduleLink"><br> MA1241 - Jan 
+		<div class="assignmentLinkSmall"> tcd.blackboard.com  
+	</div> </div> </a> 
+
+	<script> 
+
+		homeworkTop("TP/Jan/MA1241-",  noOfHwsMA1241, datesMA1241)
+
+		//listLectures( "TP/Jan/MA1241-" , 4);
+
+		listTutorials("TP/Jan/MA1241-", noOfTutMA1241, noOfTslMA1241);
+
+		listHomeworks("TP/Jan/MA1241-", noOfHwsMA1241, datesMA1241, noOfSolMA1241);
+	
+	</script>
+
+
+</div>
+<!----------------------  /Jan -------------------->
+
+<!----------------------  PETE -------------------->
+<div class="assignments"
+>
+	<a href="https://www.maths.tcd.ie/~pete/calculus/"> 
+		<div class="assignmentLink moduleLink"><br> MA1125 - Pete 
+		<div class="assignmentLinkSmall"> maths.tcd.ie/~pete/calculus/
+	</div></div></a> 
+
+	<script>
+
+		multiBox("TP/Pete/MA1125-", 'tp', 10, '.pdf', 'Tutorial Qs', 'For week 12')
+
+		//homeworkTop("TP/Pete/MA1125-",  noOfHwsMA1125, datesMA1125)
+
+		listLectures( 	"TP/Pete/MA1125-notes" , 
+						noOfLecMA1125, '.pdf', "ma1125lec", MA1125PeteLectures);  
+
+
+		listTutorials("TP/Pete/MA1125-",  noOfTutMA1125, noOfTslMA1125);
+
+		listHomeworks("TP/Pete/MA1125-",  noOfHwsMA1125,  datesMA1125, noOfSolMA1125);
+	</script>
+
+</div>
+<!---------------------- /PETE -------------------->
+
+<!----------------------  VLAD -------------------->
+<div class="assignments">
+	<a href="https://www.maths.tcd.ie/~vdots/teaching/MA1111-1819.html"> 
+		<div class="assignmentLink moduleLink"><br> MA1111 - Vlad 
+ 		<div class="assignmentLinkSmall"> maths.tcd.ie/~vdots/teaching 
+ 	</div> </div> </a>
+
+
+    <a class="modulelink" href="http://joshua.smcvt.edu/linearalgebra/book.pdf"> 
+		<div class="assignmentLink assignmentLinkSmall"> J Hefferon Linear Algebra </div> </a> 
+	
+	<script>
+		multiBox("TP/Vlad/MA1111-", 'examqs', 1, '.pdf', 'Exam Qs', 'From past years')
+
+		listLectures( 	"https://www.maths.tcd.ie/~vdots/teaching/files/MA1111-1819/1111L" , 
+						noOfLecMA1111, 'handout.pdf', "ma1111lec", MA1111VladLectures);  
+
+		listTutorials("https://www.maths.tcd.ie/~vdots/teaching/files/MA1111-1819/1111",  noOfTutMA1111,  noOfTslMA1111, 'T', 'TA');
+
+		listHomeworks("TP/Vlad/MA1111-",  noOfHwsMA1111,  datesMA1111, noOfSolMA1111);
+	</script>
+
+</div>
+<!---------------------- /VLAD -------------------->
+
+<!-------------------- Zaitsev --------------------
+<div class="assignments">
+	<a href="https://www.maths.tcd.ie/~zaitsev/1213-2018/index.html"> 
+		<div class="assignmentLink moduleLink"><br> MA1213 - Zaitsev 
+		<div> maths.tcd.ie/~zaitsev/ </div></div> 
+	</a>
+</div>
+!------------------- /Zaitsev -------------------->
+
+<!--Maths-->
+
+<!--
+<br> <img class="full" src="pic/2018-TPbg-02.jpg">
+-->
+
+<!-- PHYSICS -->
+<!--
+<div class="full">
+<br> <h1  style="font-size: 420%"><u> Physics PY1T10 </u></h1>
+<br>
+-->
+<!----------------------  MOBIUS STATS -------------------->
+<div class="assignments">
+	
+	<a href="https://tcd.blackboard.com/"> 
+		<div class="assignmentLink moduleLink"><br> Stats - M&ouml;bius 
+		<div class="assignmentLinkSmall"> tcd.blackboard.com 
+	</div> </div> </a> 
+
+<script> 
+	listLectures( "TP/Mobius/PY1T10-Stats-lec" , noOfLecPY1T10Stats, '.pdf');
+	
+	listTutorials("TP/Mobius/PY1T10-Stats-",  noOfTutPY1T10Stats, noOfTslPY1T10Stats);
+</script>
+</div>
+<!---------------------- /MOBIUS STATS -------------------->
+
+<!----------------------  Nuala Secial Rel -------------------->
+<div class="assignments">
+
+	<a href="https://tcd.blackboard.com/"> 
+		<div class="assignmentLink moduleLink"><br> Relativity - Nuala 
+		<div class="assignmentLinkSmall"> tcd.blackboard.com 
+	</div> </div> </a> 
+
+    <a href="http://elib.tcd.ie/login?url=http://lib.myilibrary.com/Open.aspx?id=1972"> 
+		<div class="assignmentLink assignmentLinkSmall"> A.P. French Special Rel </div> </a> 
+
+	<script> 
+		multiBox("TP/Nicky/NickyRelativityNotes", '', '', '.pdf', 'MY NOTES', 'Special Relativity')
+
+		listTutorials("TP/Nuala/PY1T10-Rel-", noOfTutPY1T10Rel, noOfTslPY1T10Rel)
+
+		listLectures( "TP/Nuala/PY1T10-Rel-lec" , noOfLecPY1T10Rel, '.pdf');
+	</script>
+</div>
+<!---------------------- /Nuala -------------------->
+
+<!----------------------  Waves -------------------->
+<div class="assignments">
+	
+	<a class="modulelink" href="https://tcd.blackboard.com/"> 
+		<div class="assignmentLink moduleLink"><br> Waves - Louise 
+		<div class="assignmentLinkSmall"> tcd.blackboard.com 
+	</div> </div> </a>
+
+<script> 
+	multiBox("TP/Nicky/NickyWavesNotes", '', '', '.pdf', 'MY NOTES', 'Waves')
+
+	multiBox("TP/Louise/PY1T10-", 'tp', 1, '.pdf', 'Tutorial Qs', 'From past exams')
+
+	listTutorials("TP/Louise/PY1T10-",  noOfTutPY1T10Waves, noOfTslPY1T10Waves);
+
+	listLectures( "TP/Louise/PY1T10-Waves-lec" , noOfLecPY1T10Waves, '.pdf', undefined , PY1T10WavesLectures);
+</script>
+
+</div>
+<!---------------------- /Waves -------------------->
+</div>
+<!-- Physics -->
+
+
+<img class="full" style="height: 0px; margin-top: 500px;" src="pic/blank.png">
+
+<h1>  <br></h1>
+
+</div>
+<footer id="footer">
+  <p> Disclamer: Most of the pdfs linked here are <i>not</i> created by me, but compiled together and uploaded onto a single webpage. If requested, I can take down any items.
+  </p>
+  <div class="full">
+    <br>
+    <div class="footerLeft">
+      <a href="https://www.facebook.com/nicky.pochinkov"> <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-thin fa-stack-2x"></i>
+        <i class="fa fa-facebook fa-stack-1x"></i>
+      </span> </a>
+      
+      <a href="https://www.linkedin.com/in/nicholas-pochinkov/"> <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-thin fa-stack-2x"></i>
+        <i class="fa fa-linkedin fa-stack-1x"></i>
+      </span> </a>
+
+      <a href="mailto:pesvut@gmail.com"> <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-thin fa-stack-2x"></i>
+        <i class="fa fa-envelope fa-stack-1x"></i>
+      </span> </a>
+
+      <a href="https://github.com/pesvut"> <span class="fa-stack fa-lg">
+         <i class="fa fa-github fa-stack-2x"></i>
+      </span> </a>
+
+    </div>
+    <div class="footerRight"> 
+      Email me at: <a href="mailto:pochinkn@tcd.ie"> pochinkn@tcd.ie </a> 
+      <br style="margin-top: 10px;">
+      Hosted by Trinity's Netsoc
+    </div>
+    <br>
+  </div>
+</footer>
+</body>
+</html>

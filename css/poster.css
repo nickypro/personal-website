@@ -1,0 +1,32 @@
+img.poster { 
+    width: 32%;
+    min-width: 345px; 
+    display: inline-block;
+    margin: 5px;
+    float: left;
+    margin-bottom: 20px;
+
+
+    /* colour change delay*/
+    -o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+     transition:.1s;
+}
+
+@media screen and (max-device-width: 600px){
+    img.poster {
+        width: 90%;
+        float: center;
+        margin-left: 5%;
+    }
+}
+
+img.poster:hover {
+    opacity: 0.9;
+    border: 10px;
+    position: relative;
+    transform: scale(1.015);
+}
+}
