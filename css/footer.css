@@ -1,0 +1,45 @@
+/*FOOTER CONTENTS*/
+#footer {
+  position: relative;
+  width: 100%;
+  background-color: #1c262b;
+  height: auto;
+  overflow: hidden;
+  z-index: 10;
+  margin: 0px;
+  padding: 0px;
+  border-width: 2px 0px 0px 0px;
+  border-style: solid;
+  border-color: white;
+  bottom: -8px;
+  opacity: 0.95;
+}
+
+#footer > div.full {
+  margin-bottom: 60px;
+}
+
+.footerLeft, .footerRight {
+  width: 48%;
+  color: #aee;
+  font-size: 130%;
+}
+
+.footerLeft > a, .footerRight > a {
+  color: #d5f7f7;
+}
+
+.footerLeft > a:hover, .footerRight > a:hover {
+  color: white;
+}
+
+.footerLeft {
+  float: left;
+  text-align: right;
+}
+
+.footerRight {
+  float: right;
+  text-align: left;
+}
+/*# sourceMappingURL=footer.css.map */

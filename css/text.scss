@@ -1,0 +1,58 @@
+/* Font Formatting */
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('fonts/montserrat-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/montserrat-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/montserrat-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/montserrat-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/montserrat-v12-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+h1 {
+    font-family: Montserrat, Helvetica, Arial;
+    font-weight: 500;
+    font-size: 200%;
+    text-align: center;
+    
+    color: #3c3;
+    color: var(--linkColor);
+    text-transform: capitalize;
+}
+
+h2 {
+    font-family: Montserrat , Helvetica, Arial;
+	font-size: 150%;
+    text-align: center;
+
+    color: #3c3;
+    color: var(--textColor);
+}
+
+p {
+    font-family: Montserrat , Helvetica, Arial;
+    text-align: center;
+    color: #3c3;
+    color: var(--textColor);
+    font-weight: 350;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #3c3;
+    color: var(--linkColor);
+
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+

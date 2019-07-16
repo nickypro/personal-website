@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="100px"
-   height="100px"
-   viewBox="0 0 100 100"
+   width="99.800369"
+   height="111.09425"
+   viewBox="0 0 99.800369 111.09425"
    version="1.1"
    id="SVGRoot"
    inkscape:version="0.92.3 (unknown)"
@@ -24,8 +24,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.6203867"
-     inkscape:cx="47.385215"
-     inkscape:cy="40.746203"
+     inkscape:cx="47.2854"
+     inkscape:cy="45.819396"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -40,39 +40,39 @@
        inkscape:locked="false"
        id="guide1382"
        orientation="0,1122.5197"
-       position="0,0" />
+       position="-0.09981476,5.0731929" />
     <sodipodi:guide
        inkscape:locked="false"
        id="guide1384"
        orientation="-1587.4016,0"
-       position="297,0" />
+       position="296.90018,5.0731929" />
     <sodipodi:guide
        inkscape:locked="false"
        id="guide1386"
        orientation="0,-1122.5197"
-       position="297,420" />
+       position="296.90018,425.07319" />
     <sodipodi:guide
        inkscape:locked="false"
        id="guide1388"
        orientation="1587.4016,0"
-       position="0,420" />
+       position="-0.09981476,425.07319" />
     <sodipodi:guide
-       position="50,63.867188"
+       position="49.900184,68.94038"
        orientation="1,0"
        id="guide3779"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="10.742188,50"
+       position="10.642373,55.073192"
        orientation="0,1"
        id="guide3781"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="60.9375,100"
+       position="60.837684,105.07319"
        orientation="0,1"
        id="guide3783"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="100,88.28125"
+       position="99.900184,93.354441"
        orientation="1,0"
        id="guide3785"
        inkscape:locked="false" />
@@ -94,7 +94,8 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-0.09981476,6.021062)">
     <path
        sodipodi:type="star"
        style="opacity:1;fill:#030000;fill-opacity:1;stroke:#000000;stroke-width:21.0629406;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"

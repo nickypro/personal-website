@@ -1,205 +1,685 @@
 /* THEORETICAL PHYSICS PAGE     */
-
-div.assignments { 
-    width: 32%;
-    min-width: 345px; 
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-    float: left;
-    clear: top;
-    margin-bottom: 20px;
-
-
-    /* colour change delay*/
-    -o-transition:.3s;
-    -ms-transition:.3s;
-    -moz-transition:.3s;
-    -webkit-transition:.3s;
-     transition:.3s;
-
-     --color1: #ddd;
-     --color2: #dde9e6;
+div.assignments {
+  width: 32%;
+  min-width: 345px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5px;
+  float: left;
+  clear: top;
+  margin-bottom: 20px;
+  /* colour change delay*/
+  -webkit-transition: .3s;
+  transition: .3s;
+  --color1: #ddd;
+  --color2: #dde9e6;
 }
 
-
-
 .assignmentLink {
-    display: block;
-    width: 100%;
-    padding: 10px 0px;
-    background-color: var(--textBoxColor);
-    margin-bottom: 2px;
-    text-align: center;
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
+  background-color: var(--textBoxColor);
+  margin-bottom: 2px;
+  text-align: center;
 }
 
 .assignmentLink:hover {
-    background-color: var(--menuHover);
+  background-color: var(--menuHover);
 }
 
 .assignmentLinkSmall {
-    font-size: 72%;
+  font-size: 72%;
 }
 
 .moduleLink {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 /* Collapse button */
 .dropButton {
-    background-color: #D2D2D2;
-    background-color: var(--textBoxColor);
-    color: #373;
-    color: var(--textColor);
-    padding: 16px;
-    font-size: 160%;
-    border: none;
-    width: 100%;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    font-family: montserrat;
-    margin-top: 2px; 
+  background-color: #D2D2D2;
+  background-color: var(--textBoxColor);
+  color: #373;
+  color: var(--textColor);
+  padding: 16px;
+  font-size: 160%;
+  border: none;
+  width: 100%;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: montserrat;
+  margin-top: 2px;
 }
 
 .dropButton:hover {
-    background-color: #CCDFC0;
-    background-color: var(--menuHover);
-    color: #4A4;
-    color: var(--blueBoxTextHover)
+  background-color: #CCDFC0;
+  background-color: var(--menuHover);
+  color: #4A4;
+  color: var(--blueBoxTextHover);
 }
 
 .closedDrop {
-    display: none;
+  display: none;
 }
 
 .openDrop {
-    display: block;
-    animation-name: openBox;
-    animation-duration: 0.3s;
-    animation-direction: forwards;
-    transform-origin: top center;
+  display: block;
+  -webkit-animation-name: openBox;
+          animation-name: openBox;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
 }
+
+@-webkit-keyframes openBox {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
 @keyframes openBox {
-    0% {transform: scaleY(0);
-    }
-    100% {transform: scaleY(1);}
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
 }
 
-
-@media screen and (max-width: 600px),
-screen and (max-device-width: 600px) {
-
-    div.assignments {
-        width: 90%;
-        float: center;
-        margin-left: 5%;
-    }
-
-    div.assignmentLink {
-        font-size: 200%;}
-
-    div.dropdownTable > a > div {
-        font-size: 250%;
-    }
-
-    div.dropdownTable > a > div > div {
-        border: 1%;
-    }
-
-    .dropButton {
-        font-size: 300%;
-    }
+@media screen and (max-width: 600px) {
+  div.assignments {
+    width: 90%;
+    float: center;
+    margin-left: 5%;
+  }
+  div.dropdownTable > a > div > div {
+    border: 1%;
+  }
 }
 
 .hwTable {
-        display: none;
-    }
+  display: none;
+}
 
 /* THEORETICAL PHYSICS PAGE     */
 /* THEORETICAL PHYSICS PAGE     */
 div.blueBox {
-    margin:auto; 
-    background-color: #cde; 
-    background-color: var(--blueBoxColor);
-    width: 60%;
-    min-width: 345px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+  margin: auto;
+  background-color: #cde;
+  background-color: var(--blueBoxColor);
+  width: 60%;
+  min-width: 345px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 div.blueBox > strong {
-    font-size: 200%; 
-    color: navy;
-    color: var(--blueBoxTitleColor);    
+  font-size: 200%;
+  color: navy;
+  color: var(--blueBoxTitleColor);
 }
 
-div.blueBox > a{
-    color: #77f;
-    color: var(--blueBoxTextColor);
-    font-size: 200%;
-    width: 100%; 
-    text-align: center;
-    margin: 0px auto;
-    display: block;
-    padding: 10px 0px;
-
-    -o-transition:.3s;
-    -ms-transition:.3s;
-    -moz-transition:.3s;
-    -webkit-transition:.3s;
-    transition:.3s;
+div.blueBox > a {
+  color: #77f;
+  color: var(--blueBoxTextColor);
+  font-size: 200%;
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+  display: block;
+  padding: 10px 0px;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
-div.blueBox > a:hover {
-    background-color: #c3d3ee;
-    background-color: var(--blueBoxHover);
-    color: #44d; 
-    color: var(--blueBoxTextHover);
+div.blueBox:hover {
+  background-color: #c3d3ee;
+  background-color: var(--blueBoxHover);
+  color: #44d;
+  color: var(--blueBoxTextHover);
 }
-
 
 .dropButtonBlue {
-    background-color: #cde;
-    background-color: var(--blueBoxColor);
-    color: #55d;
-    color: var(--blueBoxTextColor);
-    padding: 16px;
-    font-size: 160%;
-    text-align: center;
-    margin: auto;
-
-    border-style: solid;
-    border-width: 1px 0px;
-    border-color: #cde;
-    border-color: var(--backColor1); 
-
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    -o-transition:.3s;
-    -ms-transition:.3s;
-    -moz-transition:.3s;
-    -webkit-transition:.3s;
-    transition:.3s;
-
-    cursor: pointer;
-    font-family: montserrat;
-    margin-top: 2px; 
+  background-color: #cde;
+  background-color: var(--blueBoxColor);
+  color: #55d;
+  color: var(--blueBoxTextColor);
+  padding: 16px;
+  font-size: 160%;
+  text-align: center;
+  margin: auto;
+  border-style: solid;
+  border-width: 1px 0px;
+  border-color: #cde;
+  border-color: var(--backColor1);
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+  font-family: montserrat;
+  margin-top: 2px;
 }
 
 .dropButtonBlue:hover {
-    background-color: #b3c3e3;
-    background-color: var(--blueBoxHover);
-    color: #44d; 
-    color: var(--blueBoxTextHover);
+  background-color: #b3c3e3;
+  background-color: var(--blueBoxHover);
+  color: #44d;
+  color: var(--blueBoxTextHover);
 }
 
-
-
-@media screen and (max-width: 600px){
-    div.blueBox {
-        width: 90%;
-    }
+@media screen and (max-width: 600px) {
+  div.blueBox {
+    width: 90%;
+  }
 }
+
+.openDrop:nth-child(1) {
+  color: blue;
+}
+
+.openDrop:nth-child(1) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(2) {
+  color: blue;
+}
+
+.openDrop:nth-child(2) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(3) {
+  color: blue;
+}
+
+.openDrop:nth-child(3) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(4) {
+  color: blue;
+}
+
+.openDrop:nth-child(4) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(5) {
+  color: blue;
+}
+
+.openDrop:nth-child(5) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(6) {
+  color: blue;
+}
+
+.openDrop:nth-child(6) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(7) {
+  color: blue;
+}
+
+.openDrop:nth-child(7) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(8) {
+  color: blue;
+}
+
+.openDrop:nth-child(8) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(9) {
+  color: blue;
+}
+
+.openDrop:nth-child(9) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(10) {
+  color: blue;
+}
+
+.openDrop:nth-child(10) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(11) {
+  color: blue;
+}
+
+.openDrop:nth-child(11) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(12) {
+  color: blue;
+}
+
+.openDrop:nth-child(12) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(13) {
+  color: blue;
+}
+
+.openDrop:nth-child(13) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(14) {
+  color: blue;
+}
+
+.openDrop:nth-child(14) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(15) {
+  color: blue;
+}
+
+.openDrop:nth-child(15) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(16) {
+  color: blue;
+}
+
+.openDrop:nth-child(16) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(17) {
+  color: blue;
+}
+
+.openDrop:nth-child(17) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(18) {
+  color: blue;
+}
+
+.openDrop:nth-child(18) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(19) {
+  color: blue;
+}
+
+.openDrop:nth-child(19) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(20) {
+  color: blue;
+}
+
+.openDrop:nth-child(20) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(21) {
+  color: blue;
+}
+
+.openDrop:nth-child(21) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(22) {
+  color: blue;
+}
+
+.openDrop:nth-child(22) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(23) {
+  color: blue;
+}
+
+.openDrop:nth-child(23) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(24) {
+  color: blue;
+}
+
+.openDrop:nth-child(24) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(25) {
+  color: blue;
+}
+
+.openDrop:nth-child(25) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(26) {
+  color: blue;
+}
+
+.openDrop:nth-child(26) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(27) {
+  color: blue;
+}
+
+.openDrop:nth-child(27) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(28) {
+  color: blue;
+}
+
+.openDrop:nth-child(28) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:nth-child(29) {
+  color: blue;
+}
+
+.openDrop:nth-child(29) a {
+  position: relative;
+  -webkit-animation: topFadeIn;
+          animation: topFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+.openDrop:first-child {
+  color: green;
+}
+
+@-webkit-keyframes topFadeIn {
+  0% {
+    top: -1em;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes topFadeIn {
+  0% {
+    top: -1em;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=tp.css.map */

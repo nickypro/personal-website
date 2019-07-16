@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.2407734"
-     inkscape:cx="47.398562"
-     inkscape:cy="49.403821"
+     inkscape:zoom="3.6203867"
+     inkscape:cx="4.0513434"
+     inkscape:cy="55.565766"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -33,7 +33,9 @@
      inkscape:window-height="845"
      inkscape:window-x="67"
      inkscape:window-y="27"
-     inkscape:window-maximized="1">
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true">
     <sodipodi:guide
        inkscape:locked="false"
        id="guide1382"
@@ -54,6 +56,16 @@
        id="guide1388"
        orientation="1587.4016,0"
        position="0,420" />
+    <sodipodi:guide
+       position="49.994659,45.022815"
+       orientation="1,0"
+       id="guide2581"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="56.071358,49.994659"
+       orientation="0,1"
+       id="guide2583"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
      id="defs823" />
@@ -65,7 +77,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -77,6 +89,14 @@
        style="fill:#1a1616;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 0,100 V 0.0195646 h 100.02384 z"
        id="path827"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.727;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2577"
+       width="33.698059"
+       height="33.421844"
+       x="66.015045"
+       y="66.578156" />
   </g>
 </svg>

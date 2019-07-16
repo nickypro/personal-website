@@ -1,0 +1,127 @@
+[33mcommit 0e109d58d06c233ad7de521fc9deb4a908dc33c0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Nicky Pochinkov <pochinkn@tcd.ie>
+Date:   Mon Jul 8 20:17:51 2019 +0100
+
+    Added more svgs
+
+[1mdiff --git a/other/hexagonVertical.svg b/other/hexagonVertical.svg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bd6cc47[m
+[1m--- /dev/null[m
+[1m+++ b/other/hexagonVertical.svg[m
+[36m@@ -0,0 +1,115 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8" standalone="no"?>[m
+[32m+[m[32m<!-- Created with Inkscape (http://www.inkscape.org/) -->[m
+[32m+[m
+[32m+[m[32m<svg[m
+[32m+[m[32m   xmlns:dc="http://purl.org/dc/elements/1.1/"[m
+[32m+[m[32m   xmlns:cc="http://creativecommons.org/ns#"[m
+[32m+[m[32m   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"[m
+[32m+[m[32m   xmlns:svg="http://www.w3.org/2000/svg"[m
+[32m+[m[32m   xmlns="http://www.w3.org/2000/svg"[m
+[32m+[m[32m   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"[m
+[32m+[m[32m   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"[m
+[32m+[m[32m   width="100px"[m
+[32m+[m[32m   height="100px"[m
+[32m+[m[32m   viewBox="0 0 100 100"[m
+[32m+[m[32m   version="1.1"[m
+[32m+[m[32m   id="SVGRoot"[m
+[32m+[m[32m   inkscape:version="0.92.3 (unknown)"[m
+[32m+[m[32m   sodipodi:docname="hexagonVertical.svg">[m
+[32m+[m[32m  <sodipodi:namedview[m
+[32m+[m[32m     id="base"[m
+[32m+[m[32m     pagecolor="#ffffff"[m
+[32m+[m[32m     bordercolor="#666666"[m
+[32m+[m[32m     borderopacity="1.0"[m
+[32m+[m[32m     inkscape:pageopacity="0.0"[m
+[32m+[m[32m     inkscape:pageshadow="2"[m
+[32m+[m[32m     inkscape:zoom="3.6203867"[m
+[32m+[m[32m     inkscape:cx="47.385215"[m
+[32m+[m[32m     inkscape:cy="40.746203"[m
+[32m+[m[32m     inkscape:document-units="px"[m
+[32m+[m[32m     inkscape:current-layer="layer1"[m
+[32m+[m[32m     showgrid="false"[m
+[32m+[m[32m     inkscape:window-width="1533"[m
+[32m+[m[32m     inkscape:window-height="845"[m
+[32m+[m[32m     inkscape:window-x="67"[m
+[32m+[m[32m     inkscape:window-y="27"[m
+[32m+[m[32m     inkscape:window-maximized="1"[m
+[32m+[m[32m     showguides="true"[m
+[32m+[m[32m     inkscape:guide-bbox="true">[m
+[32m+[m[32m    <sodipodi:guide[m
+[32m+[m[32m       inkscape:locked="false"[m
+[32m+[m[32m       id="guide1382"[m
+[32m+[m[32m       orientation="0,1122.5197"[m
+[32m+[m[32m       position="0,0" />[m
+[32m+[m[32m    <sodipodi:guide[m
+[32m+[m[32m       inkscape:locked="false"[m
+[32m+[m[32m       id="guide1384"[m
+[32m+[m[32m       orientation="-1587.4016,0"[m
+[32m+[m[32m       position="297,0" />[m
+[32m+[m[32m    <sodipodi:guide[m
+[32m+[m[32m       inkscape:locked="false"[m
+[32m+[m[32m       id="guide1386"[m
+[32m+[m[32m       orientation="0,-1122.5197"[m
+[32m+[m[32m       position="297,420" />[m
+[32m+[m[32m    <sodipodi:guide[m
+[32m+[m[32m       inkscape:locked="false"[m
+[32m+[m[32m       id="guide1388"[m
+[32m+[m[32m       orientation="1587.4016,0"[m
+[32m+[m[32m       position="0,420" />[m
+[32m+[m[32m    <sodipodi:guide[m
+[32m+[m[32m       position="50,63.867188"[m
+[32m+[m[32m       orientation="1,0"[m
+[32m+[m[32m       id="guide3779"[m
+[32m+[m[32m       inkscape:locked="false" />[m
+[32m+[m[32m    <sodipodi:guide[m
+[32m+[m[32m       position="10.742188,50"[m
+[32m+[m[32m       orientation="0,1"[m
+[32m+[m[32m       id="guide3781"[m
+[32m+[m[32m       inkscape:locked="false" />[m
+[32m+[m[32m    <sodipodi:guide[m
+[32m+[m[32m       position="60.9375,100"[m
+[32m+[m[32m       orientation="0,1"[m
+[32m+[m[32m       id="guide3783"[m
+[32m+[m[32m       inkscape:locked="false" />[m
+[32m+[m[32m    <sodipodi:guide[m
+[32m+[m[32m       position="100,88.28125"[m
+[32m+[m[32m       orientation="1,0"[m
+[32m+[m[32m       id="guide3785"[m
+[32m+[m[32m       inkscape:locked="false" />[m
+[32m+[m[32m  </sodipodi:namedview>[m
+[32m+[m[32m  <defs[m
+[32m+[m[32m     id="defs823" />[m
+[32m+[m[32m  <metadata[m
+[32m+[m[32m     id="metadata826">[m
+[32m+[m[32m    <rdf:RDF>[m
+[32m+[m[32m      <cc:Work[m
+[32m+[m[32m         rdf:about="">[m
+[32m+[m[32m        <dc:format>image/svg+xml</dc:format>[m
+[32m+[m[32m        <dc:type[m
+[32m+[m[32m           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />[m
+[32m+[m[32m        <dc:title></dc:title>[m
+[32m+[m[32m      </cc:Work>[m
+[32m+[m[32m    </rdf:RDF>[m
+[32m+[m[32m  </metadata>[m
+[32m+[m[32m  <g[m
+[32m+[m[32m     inkscape:label="Layer 1"[m
+[32m+[m[32m     inkscape:groupmode="layer"[m
+[32m+[m[32m     id="layer1">[m
+[32m+[m[32m    <path[m
+[32m+[m[32m       sodipodi:type="star"[m
+[32m+[m[32m       style="opacity:1;fill:#030000;fill-opacity:1;stroke:#000000;stroke-width:21.0629406;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"[m
+[32m+[m[32m       id="path3787"[m
+[32m+[m[32m       sodipodi:sides="6"[m
+[32m+[m[32m       sodipodi:cx="50"[m
+[32m+[m[32m       sodipodi:cy="50"[m
+[32m+[m[32m       sodipodi:r1="37.923416"[m
+[32m+[m[32m       sodipodi:r2="43.30127"[m
+[32m+[m[32m       sodipodi:arg1="0"[m
+[32m+[m[32m       sodipodi:arg2="0.52359878"[m
+[32m+[m[32m       inkscape:flatsided="true"[m
+[32m+[m[32m       inkscape:rounded="0"[m
+[32m+[m[32m       inkscape:randomized="0"[m
+[32m+[m[32m       d="M 87.923416,50 68.961708,82.842642 H 31.038292 L 12.076584,50 31.038292,17.157358 l 37.923416,0 z"[m
+[32m+[m[32m       transform="matrix(0.99632767,0.57318589,-0.57523005,0.99278708,28.945119,-28.772583)" />[m
+[32m+[m[32m  </g>[m
+[32m+[m[32m</svg>[m

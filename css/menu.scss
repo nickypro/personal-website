@@ -1,0 +1,153 @@
+$menuColor: #1c262b;
+
+/* Nav bar formatting */
+#navbar{
+    position: fixed;
+	margin: 0;
+    top: 0;
+    width : 100%;
+    background-color: $menuColor;
+	height: auto;
+
+    z-index: 100;
+    border-width: 0px 0px 3px 0px;
+    border-style: solid;
+    border-color: white;
+
+    opacity: 0.95;
+}
+
+#menu {
+	list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 3rem;
+	overflow: hidden;
+    width: 100%;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, auto));
+    
+    #menu > li {
+        display: block;
+        text-align: center;
+    }
+}
+
+.menuLink {
+	display: block;
+    text-align: center;
+    
+	color: #FFF;
+    
+    background-color: #333;
+    background-color: $menuColor;
+
+	padding: 14px 16px;
+	margin-bottom: 0px;
+	text-decoration: none;
+	font-size: 1.4em;
+
+    transition:.3s;
+    opacity: 0.9;
+}
+
+.menuLink:hover {
+    transition:.5s;
+	background-color: #666;
+    background-color: lighten($menuColor, 40%); 
+}
+
+.dropdownContent {
+    max-height: 0px;
+    overflow: hidden;
+    position: absolute;
+
+    float: none;
+    opacity: 0.9;
+    
+    transition:.5s;
+}
+
+.dropdown:hover .dropdownContent {
+    padding-top: 3px;
+    height: auto;
+    max-height: 20em;
+    max-height: var(--boxhig);
+
+}
+
+br.topEmpty {
+    display: block; 
+    content: ""; 
+    margin-top: 66px; 
+}
+
+.menuButton {
+    border: 0px;
+    width: 100%;
+    display: none;
+    background-color: $menuColor;
+}
+
+/*Make Mobile firendly */
+@media screen and (max-width: 600px) {
+    #bar {
+        position: relative;
+        min-width: 0px;
+    }
+
+    .menuButton {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .menu {
+        max-height: 0px;
+        transition: 0.1s ease-out;
+    }
+
+    .openMenu {
+        max-height: 80vh;
+    }
+
+    #menu { 
+        min-width: 0px;
+        padding: 0px;
+        grid-template-columns: 100%;
+        -webkit-padding-start: 0px;
+    }
+
+    .menuLink {
+        width: auto;
+        min-width: 160px;
+    }
+
+    .topEmpty {margin-top: 0px;}
+
+    .dropdownContent {
+        width: 100%;
+        position: relative;
+        margin: 0px;
+        background-color: lighten($menuColor, 20%);
+    }
+    .menuLinkDropdown {
+        background-color: lighten($menuColor, 20%);
+        position: relative;
+    }
+}
+
+.hamburger {
+    cursor: pointer;
+    justify-self: flex-start;
+    margin: 0px 0.6rem;
+
+    .bar {
+        width: 1.5rem;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+}

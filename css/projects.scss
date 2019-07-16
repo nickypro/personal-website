@@ -1,0 +1,46 @@
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 0.1rem;
+  width: 100%;
+
+  .project-tile {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 0px;
+
+    background-color: aliceblue;
+    color: #022;
+
+    display: relative;
+    transition: 1s ease-out;
+
+    img {
+      width: 100%;
+    }
+
+    span {
+      text-align: center;
+      padding: 0.5rem;
+    }
+  }
+}
+
+.zoom {
+  position: relative;
+}
+
+.zoom:hover{
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 500px){
+  .projects {
+    grid-template-columns: 100%;
+    grid-gap: 1rem 0px;
+  }
+  .projects-tile {
+    margin: 0.5rem;
+  }
+}

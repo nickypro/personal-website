@@ -4,9 +4,7 @@
 
 <title> TCD Theoretical Physics </title>
 <link href="css/style.css" 	rel="stylesheet">
-<link href="css/menu.css" 	rel="stylesheet">
-<link href="css/tp.css" 	rel="stylesheet">
-<link href="css/text.css" 	rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="js/tp05.js" 	type="text/javascript"> </script>
 <script src="js/menu1.js" 	type="text/javascript"> </script>
 <script src="js/tpjfData01.js" 	type="text/javascript"> </script>
@@ -19,34 +17,46 @@
 <body>
 
 <!-- top part of page ================================-->
-<div id="bar">
-<ul id='menu' width="100%">
-   <li> <a href="index.html" class="menuLink">   Home      </a></li>
-   <li> <a href="stuff.html" class="menuLink">   Blog      </a></li>
-   <li class="dropdown">  <a class="menuLink">   Trinity   </a>
-      <div class="dropdownContent" style="--boxhig: 7em;">
-        <a href="tpjf.html" class="menuLink menuLinkDropdown">1st Year TP</a>
-        <a href="tpsf.html" class="menuLink menuLinkDropdown">2nd Year TP</a>
-        <!--<a href="tpjs.html">Link 3</a>-->
-      </div>
-    </li>
-   <li> <a href="posters.html" class="menuLink"> Posters   </a></li>
-    <li class="dropdown">  <a class="menuLink">   Coding   </a>
-      <div class="dropdownContent" style="--boxhig: 4em;">
-        <a href="researchProject2019.html" class="menuLink menuLinkDropdown">Tensor of Inertia</a>
-      </div>
-    </li>
-</ul>
-</div>
+<nav id="navbar">
+		<button class="menuLink menuButton" type="button" style="width: 100%" 
+		onclick="document.getElementById('menu').classList.toggle('openMenu');">
+			&#9660; Pesvut  
+		</button>
+	<ul id="menu" class="menu" width="100%">
+		<li> <a href="index.html" class="menuLink">   Pesvut    </a></li>
+		<li> <a href="stuff.html" class="menuLink">   Blog      </a></li>
+		<li class="dropdown">  <a class="menuLink">   Trinity   </a>
+			<div class="dropdownContent" style="--boxhig: 7em;">
+				<a href="tpjf.html" class="menuLink menuLinkDropdown">1st Year TP</a>
+				<a href="tpsf.html" class="menuLink menuLinkDropdown">2nd Year TP</a>
+				</div>
+		</li>
+		<li> <a href="posters.html" class="menuLink"> Posters   </a></li>
+		<li class="dropdown">  <a class="menuLink">   Coding   </a>
+			<div class="dropdownContent" style="--boxhig: 4em;">
+				<a href="researchProject2019.html" class="menuLink menuLinkDropdown">Tensor of Inertia</a>
+			</div>
+		</li>
+	</ul>
+	</nav>
 <!-- main body of the page ===========================-->
 <div id="main">
-<br class="topEmpty">
-<img class="full" src="pic/2018-TPbg-01.jpg">
 
+<div class="centeredBox" id="welcome-section"
+style="background-image: url(pic/2018-TPbg-01.jpg);">
 
+	<span style="background-color: rgba(0,0,0,0.7); padding: 1rem;">
+		<h1> First Year Theoretical Physics </h1>
+
+		<p margin="20px"> 
+			This page is dedicated to having all of our assignments up in one place
+		<br>
+		</p>
+	</span>
+</div>
 
 <div class="full"> <br> 
-	<p class="top-full"> This page is dedicated to having all of our assignments up in one place
+	<p class="top-full"> 
 </p>
 <!------------------------  Date  -------------------------->
 <div>
@@ -78,7 +88,7 @@ document.writeln( today.toLocaleDateString("en-GB", options) );
 <button type="button" class="dropButtonBlue" onclick="collapseItem('blueLinks')"> <b> &#9660; MORE LINKS </b> </button>
 </div>
 
-<div id="blueLinks" style="display: none;">
+<div id="blueLinks" class="closedDrop">
 	<div class="blueBox"><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/index.html"> Hyper Physics </a></div>
 	<div class="blueBox"><a href="http://www.tcd.ie/Local/Exam_Papers/"> Old Exam Archive </a></div>
 	<div class="blueBox"><a href="https://www.tcd.ie/itservices/software/kb/student_software.php"> TCD Software </a></div>
@@ -304,7 +314,7 @@ document.writeln( today.toLocaleDateString("en-GB", options) );
 
 
 
-<br> <img class="full" src="pic/2018-TPbg-03.jpg">
+<br> <img class="fullImg" src="pic/2018-TPbg-03.jpg">
 <!--MATHS-->
 <div class="full">
 <h1 style="font-size: 420%"> Semester 1 </h1>
@@ -396,7 +406,7 @@ document.writeln( today.toLocaleDateString("en-GB", options) );
 <!--Maths-->
 
 <!--
-<br> <img class="full" src="pic/2018-TPbg-02.jpg">
+<br> <img class="fullImg" src="pic/2018-TPbg-02.jpg">
 -->
 
 <!-- PHYSICS -->

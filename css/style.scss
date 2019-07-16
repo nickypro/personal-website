@@ -1,0 +1,205 @@
+@import 'text.scss';
+@import 'menu.scss';
+@import 'poster.scss';
+@import 'tp.scss';
+@import 'footer.scss';
+@import 'projects.scss';
+
+body {
+    margin: 0px;
+	font-family: Montserrat, halvetica, arial;
+    
+    --textColor:  #e9ffea/*#097325*/;
+    --titleColor: #fba6ff;
+    --linkColor:  #aee   ;
+
+    --backColor1: #15112f  ;
+    --backColor2: #15112f  ; 
+    --textBoxColor: #2f2b4a;
+
+    --blueBoxColor: #123456;
+    --blueBoxHover: #345678;
+    --blueBoxTitleColor: #0cd ;
+    --blueBoxTextColor:  #def;
+    --blueBoxTextHover:  #def;
+
+    background-color: #eee;
+    background-color: var(--backColor2)
+
+}
+
+/* Basic Page Formatting */
+#main {
+    width: 100%;
+    margin: 0px;
+    background-color: #eee;
+    background-color: var(--backColor1);
+    overflow-wrap: break-word;
+    font-size: 20px;
+}
+
+
+/* Formatting for page elements*/
+hr {width: 100%;
+	border-top: 1px solid #eee;}
+
+hr.d{max-width: 1300px;
+	 border-top: 1px solid #ccc;}
+
+a.highlightedLink {
+    padding: 5px; 
+    background-color: #9ea ; 
+    color: #062; 
+    font-weight: bold;
+
+    transition:.3s;
+}
+
+a.highlightedLink:hover {
+    background-color: #cfc ;
+    color: #193; 
+}
+
+.centeredBox {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+
+    h1 {
+        margin-top: 4rem;
+    }
+
+}
+
+
+.full {
+	width: 96%;
+	max-width: 1300px;
+    text-align: justify;
+    margin: auto;
+}
+
+.fullImg {
+    width: 100%;
+    margin: 0px;
+    min-width: 200px;
+    max-height: 60vh;
+    overflow: hidden;
+    background-color: #333;
+    background-color: var(--menuColorLighter);
+    object-fit: cover;
+}
+
+p.top-full {
+    max-width: 1100px;
+    text-align: justify;
+    display: inline-block;
+    margin-left:3px;
+    margin-right:3px;
+}
+
+div.multiFullPic {
+    width: 100%;
+    margin: 0px;
+    min-width: 200px;
+    max-height: 60vh;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+}
+
+div.multiFullPic > img {
+    width: 33.33%;
+    margin: 0px;
+    padding: 0px;
+    align-items: stretch;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 600px){
+    div.multiFullPic {
+        max-height: 150vh;
+        overflow: visible;
+        display:block
+    }
+    div.multiFullPic > img {
+        width: 100%;
+        align-items: center;
+        height: 50vh;
+    }
+}
+
+
+/* split blocks  */
+.left {
+    width: 96%;
+    color: #097325;  /* FONT GREEN COLOUR COLOR*/
+    color: var(--textColor);
+    margin: 50px auto;
+
+    max-width: 1300px;
+
+    overflow: auto;
+    display: block;
+    position: relative;
+    height: auto;
+}
+
+
+.left > img , .leftImg{
+    width : 47%;
+    float : left;
+    margin-bottom: 50px;
+    padding: 2px;
+    border: 1px solid #aaa;
+    border-color: #aaa;
+    max-height: 1000px;
+
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+}
+
+.left > div {
+    width: 47%;
+    float: right;
+    background-color: #ddd;
+    background-color: var(--textBoxColor);
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    margin-bottom: 18px;
+
+    margin-left: -26%;
+    padding-left: 26%;
+    z-index: 1;
+    }
+
+.left > div > p {
+    text-align: justify;
+}
+
+.left > div > p > a {
+    line-height: 170%;
+}
+.left > div > p > a.inline {
+    line-height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+	.left > img, .leftImg {width: 98%;}
+	.left > div {
+        width: 96%; 
+        padding-left: 1.5%; 
+        margin-left: 2px;
+        margin-right: 0px;
+
+        border-width: 0px 0px 0px 3px;
+        border-color: var(--blueBoxTitleColor);
+        border-style: solid;
+    }
+}

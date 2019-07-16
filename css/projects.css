@@ -1,0 +1,55 @@
+.projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 0.1rem;
+  width: 100%;
+}
+
+.projects .project-tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem;
+  padding: 0px;
+  background-color: aliceblue;
+  color: #022;
+  display: relative;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+}
+
+.projects .project-tile img {
+  width: 100%;
+}
+
+.projects .project-tile span {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.zoom {
+  position: relative;
+}
+
+.zoom:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+@media screen and (max-width: 500px) {
+  .projects {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    grid-gap: 1rem 0px;
+  }
+  .projects-tile {
+    margin: 0.5rem;
+  }
+}
+/*# sourceMappingURL=projects.css.map */

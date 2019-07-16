@@ -4,8 +4,7 @@
 
 <title> My Stuff </title>
 <link href="css/style.css" rel="stylesheet">
-<link href="css/menu.css" rel="stylesheet">
-<link href="css/text.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="js/menu1.js" type="text/javascript"> </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script> styl(); </script>
@@ -19,16 +18,19 @@
 <body>
 
 <!-- top part of page ================================-->
-<div id="bar">
-<ul id='menu' width="100%">
-    <li> <a href="index.html" class="menuLink">   Home      </a></li>
+<nav id="navbar">
+    <button class="menuLink menuButton" type="button" style="width: 100%" 
+    onclick="document.getElementById('menu').classList.toggle('openMenu');">
+      &#9660; Pesvut  
+    </button>
+  <ul id="menu" class="menu" width="100%">
+    <li> <a href="index.html" class="menuLink">   Pesvut    </a></li>
     <li> <a href="stuff.html" class="menuLink">   Blog      </a></li>
     <li class="dropdown">  <a class="menuLink">   Trinity   </a>
       <div class="dropdownContent" style="--boxhig: 7em;">
         <a href="tpjf.html" class="menuLink menuLinkDropdown">1st Year TP</a>
         <a href="tpsf.html" class="menuLink menuLinkDropdown">2nd Year TP</a>
-        <!--<a href="tpjs.html">Link 3</a>-->
-      </div>
+        </div>
     </li>
     <li> <a href="posters.html" class="menuLink"> Posters   </a></li>
     <li class="dropdown">  <a class="menuLink">   Coding   </a>
@@ -36,26 +38,23 @@
         <a href="researchProject2019.html" class="menuLink menuLinkDropdown">Tensor of Inertia</a>
       </div>
     </li>
-</ul>
-</div>
+  </ul>
+  </nav>
 <!-- main body of the page ===========================-->
 <div id="main">
 
-<br class="topEmpty">
-<img class="full" src="pic/stockBackground.jpg" />
+<div class="centeredBox" id="welcome-section"
+  style="background-image: url(pic/stockBackground.jpg);">
+    
+    <h1> Let's look at some things I have done. </h1>
 
-<div class="full"> <br>
-<h1> Let's look at some things I have done. </h1>
-<p margin="20px" class="top-full"> I just wanted a place to upload all of the activites and projects I've worked on, but am not particullarly fond of using social media. I decided to try design a somewhat responsive website from scratch as a learning experience.
-<br><br>
-Here are some things I've done in reverse chronological order</p>
-<br><br>
+  </span>
 </div>
 
 
 <!--  To copy paste
 
-<img class="full" src=" pic/20XX-YY-ZZ.jpg "/>
+<img class="fullImg" src=" pic/20XX-YY-ZZ.jpg "/>
 
 <div class="left"> 
 <img src=" pic/20XX-YY-ZZ.jpg "/>
@@ -66,7 +65,13 @@ Here are some things I've done in reverse chronological order</p>
 </div>
 
 -->
-<img class="full" src=" pic/2019-VegansocAGM-01.jpg "/>
+<div class="full"> 
+    <p margin="20px" class="top-full"> I just wanted a place to upload all of the activites and projects I've worked on and done without using social media. I decided to try design a somewhat responsive website from scratch as a learning experience.
+        Here are some things I've done in reverse chronological order</p>
+    <br>
+</div>
+
+<img class="fullImg" src=" pic/2019-VegansocAGM-01.jpg "/>
 
 <div class="left"> 
 <img src=" pic/2019-VegansocAGM-02.png" style="border: none;" />
@@ -84,7 +89,7 @@ Here are some things I've done in reverse chronological order</p>
 
 
 
-<img class="full" src=" pic/2019-Berlin-02.jpg "/>
+<img class="fullImg" src=" pic/2019-Berlin-02.jpg "/>
 <div class="left"> 
 <img src=" pic/2019-Berlin-01.jpg "/>
 <div> 
@@ -98,7 +103,7 @@ Here are some things I've done in reverse chronological order</p>
 
 
 
-<img class="full" src=" pic/2019-Hamburg-01.jpg "/>
+<img class="fullImg" src=" pic/2019-Hamburg-01.jpg "/>
 
 <div class="left"> 
 <img src=" pic/2019-Hamburg-02.jpg "/>
@@ -113,7 +118,7 @@ Here are some things I've done in reverse chronological order</p>
 
 
 
-<img class="full" src=" pic/2018-Vegansoc-01.jpg "/>
+<img class="fullImg" src=" pic/2018-Vegansoc-01.jpg "/>
 
 <div class="left"> 
 <img src=" pic/Posters/VeganSocGreenDayPoster.png " style="border-radius: 0px;" />
@@ -127,7 +132,7 @@ Here are some things I've done in reverse chronological order</p>
 </div>
 
 
-<img class="full" src=" pic/2018-Naughton-02.jpg "/>
+<img class="fullImg" src=" pic/2018-Naughton-02.jpg "/>
 
 <div class="left"> 
 <img src=" pic/2018-Naughton-01.jpg "/>
@@ -139,7 +144,7 @@ There Was also a retreat to Galway the April after, which was really good fun, a
 </div>
 </div>
 
-<img class="full" src=" pic/2018-TP-02.jpg "/>
+<img class="fullImg" src=" pic/2018-TP-02.jpg "/>
 
 <div class="left"> 
 <img src=" pic/2018-TP-01.jpg "/>
@@ -152,7 +157,7 @@ There Was also a retreat to Galway the April after, which was really good fun, a
 </div>
 </div>
 
-<img class="full" src=" pic/2018-IChO-01.jpg "/>
+<img class="fullImg" src=" pic/2018-IChO-01.jpg "/>
 
 <div class="left"> 
 <img src=" pic/2018-IChO-02.jpg "/>
@@ -172,7 +177,7 @@ I also decided to write <a class="inline" href="icho.html"> a long piece on my e
 
 
 
-<img class="full" src=" pic/2018-IMO-02.jpg "/>
+<img class="fullImg" src=" pic/2018-IMO-02.jpg "/>
 
 <div class="left"> 
 <img src=" pic/2018-IMO-01.jpg "/>
@@ -187,7 +192,7 @@ I also decided to write <a class="inline" href="icho.html"> a long piece on my e
 
 
 
-<img class="full" src=" pic/2018-BxMO-01.jpg "/>
+<img class="fullImg" src=" pic/2018-BxMO-01.jpg "/>
 
 <div class="left"> 
 <img src=" pic/2018-BxMO-03.jpg" style="border-radius: 0px;"/>
@@ -202,7 +207,7 @@ I also decided to write <a class="inline" href="icho.html"> a long piece on my e
 
 
 
-<img class="full" src="pic/2017-ctyi-02.jpg"/>
+<img class="fullImg" src="pic/2017-ctyi-02.jpg"/>
 
 <div class="left"> 
 <img src="pic/2017-ctyi-01.jpg"/>
@@ -214,7 +219,7 @@ I also decided to write <a class="inline" href="icho.html"> a long piece on my e
 
 
 
-<img class="full" src="pic/2017-walton-02.png"/>
+<img class="fullImg" src="pic/2017-walton-02.png"/>
 
 <div class="left"> 
 <img src="pic/2017-walton.jpg"/>
@@ -226,7 +231,7 @@ I also decided to write <a class="inline" href="icho.html"> a long piece on my e
 
 
 
-<img class="full" src=" pic/2016-DND-02.jpg "/>
+<img class="fullImg" src=" pic/2016-DND-02.jpg "/>
 
 <div class="left"> 
 <img src=" pic/2016-DND-05.jpg "/>
@@ -240,7 +245,7 @@ I also decided to make a necklace one day from one our characters as a sort of g
 </div>
 
 <!--
-<img class="full" src=" pic/20XX-YY-ZZ.jpg "></img>
+<img class="fullImg" src=" pic/20XX-YY-ZZ.jpg "></img>
 
 <div class="left"> 
 <img src=" pic/20XX-YY-ZZ.jpg "/>
